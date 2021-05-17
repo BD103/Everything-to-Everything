@@ -5,6 +5,9 @@ description = "Convert data types through the command line"
 authors = ["BD103 <dont@stalk.me>"]
 license = "Apache-2.0"
 readme = "README.md"
+homepage = "https://bd103.thedev.id/Everything-to-Everything"
+repository = "https://github.com/BD103/Everything-to-Everything"
+
 
 [tool.poetry.dependencies]
 python = "^3.8"
