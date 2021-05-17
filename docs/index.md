@@ -1,5 +1,3 @@
-# Everything to Everything (ETE)
-
 ETE is a simple CLI program that converts data types to other data types. It currently supports [Toml](https://pypi.org/project/toml/), [Yaml](https://pypi.org/project/PyYAML/), and [Json](https://www.json.org/).
 
 ## Install
