@@ -4,12 +4,13 @@ version = "1.0.0"
 description = "Convert data types through the command line"
 authors = ["BD103 <dont@stalk.me>"]
 license = "Apache-2.0"
+readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.8"
 toml = "^0.10.2"
 click = "^8.0.0"
-PyYaml = "^5.4.1"
+PyYAML = "^5.4.1"
 
 [tool.poetry.dev-dependencies]
 isort = "^5.8.0"
