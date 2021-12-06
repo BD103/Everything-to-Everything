@@ -1,27 +1,38 @@
 [tool.poetry]
 name = "ete"
-version = "1.0.0"
+version = "2.0.0"
 description = "Convert data types through the command line"
 authors = ["BD103 <dont@stalk.me>"]
 license = "Apache-2.0"
 readme = "README.md"
-homepage = "https://bd103.thedev.id/Everything-to-Everything"
+homepage = "https://bd103.github.io/Everything-to-Everything"
 repository = "https://github.com/BD103/Everything-to-Everything"
-
 
 [tool.poetry.dependencies]
 python = "^3.8"
-toml = "^0.10.2"
-click = "^8.0.0"
-PyYAML = "^5.4.1"
+click = "^8.0.3"
 
 [tool.poetry.dev-dependencies]
-isort = "^5.8.0"
-flake8 = "^3.9.2"
+black = "^21.12b0"
+isort = "^5.10.1"
+flake8 = "^4.0.1"
 
 [tool.poetry.scripts]
 ete = "ete.__main__:ete"
 
+[tool.black]
+line-length = 88
+target-version = ["py38"]
+extend-exclude = '''
+/(
+    | .venv
+)/
+'''
+
+[tool.isort]
+profile = "black"
+extend_skip = [".cache"]
+
 [build-system]
-requires = ["poetry>=0.12"]
-build-backend = "poetry.masonry.api"
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
